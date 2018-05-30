@@ -1,0 +1,48 @@
+page {
+  background-color: white;
+  height: 100%;
+}
+
+.page__hd{
+  padding: 50rpx 50rpx 100rpx 50rpx;
+  text-align: center;
+}
+
+.page__title{
+  display: inline-block;
+  padding: 20rpx 10rpx;
+  font-weight: bold;
+  font-size: 40rpx;
+  color: #984A59;
+  /**border-bottom: 0.5px solid #CCCCCC;**/
+}
+
+.section{
+  margin-bottom: 50rpx;
+}
+
+.picker_box{
+  display: flex;
+  padding: 20rpx;
+  background-color: #fbf9fe;
+  font-size: 30rpx;
+  color: #984A59;
+}
+
+.current_choice{
+  font-size: 30rpx;
+  color: #AC7C7C;
+}
+
+.text_box{
+  margin: 10px 20px;
+  border-bottom:1px solid #c3c3c3;
+  padding-bottom:10px;
+  color: #AC7C7C;
+  font-size: 30rpx;
+}
+
+/** 修改button默认的点击态样式类**/
+.submit {
+  background-color: #984A59;
+}

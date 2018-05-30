@@ -1,0 +1,55 @@
+<!--pages/register/register.wxml-->
+<view class="page__hd">
+  <text class="page__title">物 品 信 息</text>
+</view>
+
+<form bindsubmit="submit">  
+  <view class="section">
+    <picker bindchange="bindPickerChange_sex" value="{{index_sex}}" range="{{sex}}">
+      <view class="picker_box">
+        物品性别：
+        <text class="current_choice">{{sex[index_sex]}}</text>
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <picker bindchange="bindPickerChange_cat" value="{{index_cat}}" range="{{category}}">
+      <view class="picker_box">
+        物品类别：
+        <text class="current_choice">{{category[index_cat]}}</text>
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <picker mode="date" value="{{date}}" start="2018-06-01" end="2019-01-01" bindchange="bindDateChange">
+      <view class="picker_box">
+        丢失/拾取日期：
+        <text class="current_choice">{{date}}</text>
+      </view>
+    </picker>
+  </view>
+
+  <view class="section">
+    <view class="picker_box">
+      丢失/拾取地点：
+      <input class="current_choice" bindinput="bindKeyInput_place" placeholder='点击这里输入地点' placeholder-class='current_choice' adjust-position='false' cursor-spacing='20'/>
+    </view>
+    <view class="picker_box">
+      您选择的地点：<text class="current_choice">{{place}}</text>
+    </view>
+    <view bindtouchstart="bindSearch" bindtap="bindSelect" data-keywords="{{i.name}}" class="text_box" wx:for="{{tips}}" wx:for-item="i">
+    {{i.name}}
+  </view>
+  </view>
+
+  <view class="section">
+    <view class="picker_box">
+      联系方式：
+      <input class="current_choice" bindinput="bindKeyInput" placeholder='手机邮箱微信随你呀~' placeholder-class='current_choice' adjust-position='false' cursor-spacing='20'/>
+    </view>
+  </view>
+
+  <button style="background-color: #AC7C7C; color: white" form-type="submit">写好啦</button> 
+</form>
