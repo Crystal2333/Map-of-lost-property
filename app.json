@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/map/map",
+    "pages/logs/logs",
+    "pages/register/register"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#984A59",
+    "navigationBarTitleText": "失物地图",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#984A59",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "icons/地图深.png",
+        "iconPath": "icons/地图.png",
+        "pagePath": "pages/map/map",
+        "text": "地图"
+      },
+      {
+        "selectedIconPath": "icons/筛选深.png",
+        "iconPath": "icons/筛选.png",
+        "pagePath": "pages/map/map",
+        "text": "筛选"
+      },
+      {
+        "selectedIconPath": "icons/登记深.png",
+        "iconPath": "icons/登记.png",
+        "pagePath": "pages/register/register",
+        "text": "登记"
+      },
+      {
+        "selectedIconPath": "icons/我的深.png",
+        "iconPath": "icons/我的.png",
+        "pagePath": "pages/map/map",
+        "text": "我的"
+      }
+    ]
+  } 
+}
